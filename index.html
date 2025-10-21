@@ -4,73 +4,160 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Target Community – Together We Achieve</title>
+
+  <!-- Meta for Google & SEO -->
+  <meta name="description" content="Target Community – Registered Nonprofit Organization in Thulhaadhoo, Maldives. Together We Achieve." />
+  <meta name="keywords" content="Target Community, Thulhaadhoo, Maldives, Nonprofit, Youth, Sports, Festival" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; color: #222; }
-    header { background: #f04b23; color: #fff; text-align: center; padding: 40px 20px; }
-    header img { height: 100px; margin-bottom: 15px; }
-    nav { background: #222; text-align: center; }
+    :root {
+      --orange: #f04b23;
+      --dark: #222;
+      --light-grey: #f7f7f7;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family: Arial, sans-serif; line-height:1.6; color:var(--dark); }
+
+    /* HEADER */
+    header {
+      background: var(--orange);
+      color:#fff;
+      text-align:center;
+      padding:60px 20px 50px;
+    }
+    header img { height:100px; margin-bottom:15px; }
+    header h1 { margin:10px 0 0; font-size:2.2em; letter-spacing:1px; }
+    header p { font-size:1.1em; margin-top:5px; }
+
+    /* NAVIGATION */
+    nav { background: var(--dark); text-align:center; position:sticky; top:0; z-index:999; }
     nav a {
-      color: #fff; text-decoration: none; padding: 15px 25px; display: inline-block;
+      color:#fff; text-decoration:none; padding:15px 25px; display:inline-block;
     }
-    nav a:hover { background: #f04b23; }
-    section { padding: 40px 20px; max-width: 900px; margin: auto; }
-    h2 { color: #f04b23; border-bottom: 2px solid #f04b23; padding-bottom: 5px; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 5px 0; }
+    nav a:hover { background: var(--orange); }
+
+    /* SECTION BASE */
+    section { padding:60px 20px; max-width:1000px; margin:auto; }
+
+    /* HOME */
+    .hero {
+      width:100%; max-height:420px; object-fit:cover;
+      border-radius:6px; margin-bottom:25px;
+    }
+    .mission { background:#fff; border-left:5px solid var(--orange); padding:15px 20px; margin:10px 0; }
+
+    /* ABOUT */
+    #about { background:var(--light-grey); }
+    #about h2, #contact h2 { color:var(--orange); text-align:center; }
+
+    /* Committee & Founders Cards */
+    .member-grid {
+      display:flex; flex-wrap:wrap; gap:15px; justify-content:center; margin-top:25px;
+    }
+    .member-card {
+      background:#fff; border:1px solid #ddd; border-radius:6px;
+      padding:15px; width:180px; text-align:center; box-shadow:0 2px 4px rgba(0,0,0,0.05);
+    }
+    .member-card strong { color:var(--orange); display:block; margin-bottom:5px; }
+
+    /* CONTACT */
+    #contact p { text-align:center; font-size:1.05em; }
+    #contact a { color:var(--orange); text-decoration:none; }
+    #contact a:hover { text-decoration:underline; }
+
+    /* FOOTER */
     footer {
-      background: #222; color: #fff; text-align: center; padding: 20px;
-      font-size: 0.9em; margin-top: 30px;
+      background:var(--dark); color:#fff; text-align:center; padding:25px 15px;
+      font-size:0.95em;
     }
-    img.hero { width: 100%; max-height: 400px; object-fit: cover; border-radius: 6px; }
+    footer a { color:#fff; text-decoration:underline; }
+    footer a:hover { color:var(--orange); }
+
+    /* Responsive */
+    @media (max-width:600px){
+      header h1{font-size:1.8em;}
+      .member-card{width:100%;}
+    }
   </style>
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header>
     <img src="logo.png" alt="Target Community Logo" />
     <h1>Target Community</h1>
     <p><em>Together We Achieve</em></p>
   </header>
 
+  <!-- NAVIGATION -->
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About Us</a>
     <a href="#contact">Contact Us</a>
   </nav>
 
+  <!-- HOME -->
   <section id="home">
     <img src="photo.jpg" alt="Community Event Photo" class="hero" />
-    <h2>Mission & Vision</h2>
-    <p><strong>Mission:</strong> To empower the youth and community through education, sports, and social development programs.</p>
-    <p><strong>Vision:</strong> A stronger, more connected Thulhaadhoo community built on teamwork, leadership, and shared success.</p>
+    <h2 style="color:var(--orange); text-align:center;">Mission & Vision</h2>
+    <div class="mission">
+      <p><strong>Mission:</strong> To empower youth and the community through education, sports, and social development programs.</p>
+      <p><strong>Vision:</strong> A stronger, more connected Thulhaadhoo community built on teamwork, leadership, and shared success.</p>
+    </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Us</h2>
+
     <p>
-      Target Community is a youth-led nonprofit organization based in Baa. Thulhaadhoo, Maldives. 
-      We organize community events, sports tournaments, and educational programs aimed at inspiring young people 
-      to contribute positively to society.
+      <strong>Target Community (F/2015/117/6)</strong> is a non-profit organization registered with the Ministry of Home Affairs on 
+      <strong>30th November 2015</strong>. Our community is made up of childhood friends united to work towards a 
+      better and brighter future for Thulhaadhoo. Our simple mission is <em>"Together We Achieve"</em>, and we aim to 
+      inspire the youth by promoting and supporting social and recreational development on the island, 
+      in accordance with Islamic Sharia.
     </p>
 
-    <h3>Organising Committee</h3>
-    <ul>
-      <li>Ahmed Humaid – President</li>
-      <li>Mubah Mohamed – Vice President</li>
-      <li>Ahmed Saneel – Treasurer</li>
-      <li>Ali Moonis – Secretary</li>
-      <li>Maeash Mohamed – Special Member</li>
-      <li>Ismail Sajid – Special Member</li>
-    </ul>
+    <p>
+      We have a strong track record of community engagement, having actively participated in the global 
+      <strong>350 Climate Change Project</strong> by 350.org. Our activities include tree planting, cleaning coconut palms, 
+      organizing awareness programs, and cleaning reefs to support sustainable reef fisheries. 
+      We also collaborated with <strong>Four Seasons Resort Maldives, Landaa Giraavaru</strong>, to conduct 
+      conservation programs for turtles and sharks—species vital to the hospitality industry. 
+      Together, we raised awareness on the island through banners, hangers, and petitions urging residents to protect marine life. 
+      In partnership with Four Seasons, we also helped establish a <strong>Turtle Stadium</strong> now used by the Thulhaadhoo community.
+    </p>
 
-    <h3>Founders</h3>
-    <ul>
-      <li>Ahmed Humaid</li>
-      <li>Maeash Mohamed</li>
-      <li>Ismail Sajid</li>
-      <li>Moonis Mohamed</li>
-    </ul>
+    <p>
+      Target Community has also taken initiatives to promote and develop young football players through our annual 
+      <strong>Kids’ Futsal Tournament</strong>. We organize the <strong>Target Children’s Festival</strong> each year to encourage 
+      children to showcase their talents in a family-friendly festival atmosphere. 
+      We also support and assist other clubs and individuals who share our goal of building a brighter future for Thulhaadhoo.
+    </p>
+
+    <h3 style="color:var(--orange); text-align:center;">Organising Committee</h3>
+    <div class="member-grid">
+      <div class="member-card"><strong>Ahmed Humaid</strong>President</div>
+      <div class="member-card"><strong>Mubah Mohamed</strong>Vice President</div>
+      <div class="member-card"><strong>Ahmed Saneel</strong>Treasurer</div>
+      <div class="member-card"><strong>Ali Moonis</strong>Secretary</div>
+      <div class="member-card"><strong>Maeash Mohamed</strong>Special Member</div>
+      <div class="member-card"><strong>Ismail Sajid</strong>Special Member</div>
+    </div>
+
+    <h3 style="color:var(--orange); text-align:center; margin-top:40px;">Founders</h3>
+    <div class="member-grid">
+      <div class="member-card"><strong>Ahmed Humaid</strong></div>
+      <div class="member-card"><strong>Maeash Mohamed</strong></div>
+      <div class="member-card"><strong>Ismail Sajid</strong></div>
+      <div class="member-card"><strong>Moonis Mohamed</strong></div>
+    </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
     <h2>Contact Us</h2>
     <p><strong>Address:</strong> Manaahil, Baa. Thulhaadhoo, Maldives</p>
@@ -78,8 +165,14 @@
     <p><strong>Email:</strong> <a href="mailto:hello@target.mv">hello@target.mv</a></p>
   </section>
 
+  <!-- FOOTER -->
   <footer>
+    <p>Follow us: 
+      <a href="https://facebook.com/targetcommunitymv" target="_blank">Facebook</a> |
+      <a href="mailto:hello@target.mv">Email</a>
+    </p>
     <p>© 2025 Target Community – Thulhaadhoo, Maldives</p>
   </footer>
+
 </body>
 </html>
